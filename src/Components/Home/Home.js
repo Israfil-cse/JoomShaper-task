@@ -1,9 +1,10 @@
 import React from 'react';
+import ImageDataLoad from '../ImageDataLoad/ImageDataLoad';
 
 const Home = () => {
     return (
         <div>
-            home
+            <ImageDataLoad></ImageDataLoad>
         </div>
     );
 };
