@@ -1,21 +1,15 @@
 import React from "react";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from "./Components/Home/Home";
+import ImageDataLoad from "./Components/ImageDataLoad/ImageDataLoad";
+
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-      </Switch>
-    </Router>
+    <DndProvider backend={HTML5Backend}>
+      <ImageDataLoad></ImageDataLoad>
+    </DndProvider>
   );
 }
 

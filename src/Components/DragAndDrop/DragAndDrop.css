@@ -1,0 +1,11 @@
+.drag_section{
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+.drop_section{
+    height: 300px;
+    width: 400px;
+    border: 1px dotted;
+}
